@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON RACER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game"></div>
+
+  <header>
+    <h2>NEON<span>RACER</span></h2>
+    <div class="stats">
+      <div>TEZLIK <b id="speed">0</b> km/h</div>
+      <div>POZITSIYA <b id="position">1/4</b></div>
+    </div>
+    <button id="pause">Ⅱ</button>
+  </header>
+
+  <div class="speedometer">
+    <small>YOUR SPEED</small>
+    <div><b id="bigSpeed">000</b><span> KM/H</span></div>
+    <div class="bar"><i id="speedBar"></i></div>
+    <small>NITRO BOOST</small>
+    <div class="bar nitro"><i id="nitroBar"></i></div>
+  </div>
+
+  <div class="help">
+    <span>W / ↑ — GAZ</span>
+    <span>A D / ← → — BURILISH</span>
+    <span>SPACE — NITRO</span>
+  </div>
+
+  <div id="menu">
+    <div class="panel">
+      <p class="tag">NEXT GENERATION RACING</p>
+      <h1>NEON<br><span>RACER</span></h1>
+      <p>Shahar ko'chalarida tezlikni his qil!</p>
+
+      <label>MASHINA RANGI</label>
+      <select id="color">
+        <option value="#ff2855">Neon Red</option>
+        <option value="#00d9ff">Cyber Blue</option>
+        <option value="#b6ff00">Toxic Green</option>
+        <option value="#b94dff">Purple Night</option>
+      </select>
+
+      <button id="start">RACENI BOSHLASH ➜</button>
+      <small>WASD / ARROW KEYS • SPACE TO BOOST</small>
+    </div>
+  </div>
+
+  <div id="notice"></div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
